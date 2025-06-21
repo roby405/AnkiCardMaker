@@ -1,0 +1,1 @@
+This project is supposed to take screenshots of a certain section of the screen, mark a word as unknown, scan the text inside the image by manually feeding it to an ai/ocr, then using the output to generate cards that are automatically added to an anki deck of your choice.
