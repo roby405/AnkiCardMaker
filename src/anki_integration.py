@@ -37,9 +37,7 @@ if __name__ == "__main__":
         "notes": []
     }
     
-    fields_list = [
-
-]
+    fields_list = []
     for fields in fields_list:
         payload["notes"].append(fill_note(deckName=deckName, modelName=modelName, fields=fields, tags=tags))
     

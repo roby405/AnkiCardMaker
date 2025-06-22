@@ -17,7 +17,7 @@ def take_screenshot_of_subsection(points=points, output_filename="default.png"):
         
         sct_img = sct.grab(monitor_region)
         img = Image.frombytes("RGB", sct_img.size, sct_img.rgb)
-        img.save(output_filename)
+        img.save(f"dest/{output_filename}")
     
     return True if img else False
         
