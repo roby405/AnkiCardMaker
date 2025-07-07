@@ -26,7 +26,10 @@ def fill_note(deckName="default", modelName="Basic", fields=None, tags=None):
             'deckName': deckName,
             'modelName': modelName,
             'fields': fields,
-            'tags': tags
+            'tags': tags,
+            'options': {
+                'allowDuplicate': True
+            }
         }
 
 if __name__ == "__main__":
@@ -37,9 +40,9 @@ if __name__ == "__main__":
         "notes": []
     }
     
-    fields_list = []
+    fields_list = 
     for fields in fields_list:
         payload["notes"].append(fill_note(deckName=deckName, modelName=modelName, fields=fields, tags=tags))
-    
+    print(payload)
     result = invoke('addNotes', payload)
     print('received the result: {}'.format(result))
